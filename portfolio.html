@@ -35,12 +35,16 @@
         </nav>
         <ul class="auth-nav style">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact link"
+            <a href="mailto:info@devstudio.com" class="contact link auth-icon"
+              ><svg class="auth-icon-mail" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact link"
+            <a href="tel:+380961111111" class="contact link auth-icon"
+              ><svg class="auth-icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -71,7 +75,7 @@
 
           <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
           <ul class="item style portfoloi-container">
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/pople_on_the_screen.jpg"
@@ -86,7 +90,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/men's_with_ball.jpg"
@@ -104,7 +108,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/seafood.jpg"
@@ -120,7 +124,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/headphone.jpg"
@@ -136,7 +140,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/boxes.jpg"
@@ -152,7 +156,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/monitor.jpg"
@@ -168,7 +172,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/journal.jpg"
@@ -184,7 +188,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/tag.jpg"
@@ -200,7 +204,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="portfolio-hover">
               <a href="#" class="link">
                 <img
                   src="./images/laptop.jpg"
@@ -220,13 +224,13 @@
       </section>
     </main>
     <!----------------- підвал --------------------->
-
     <footer class="background container-address">
-      <div class="container">
-        <a href="/" class="link-logo link container-logo"
-          >Web<span class="logo-studio-two">Studio</span></a
-        >
+      <div class="container footer-container">
         <div>
+          <a href="/" class="link-logo link container-logo"
+            >Web<span class="logo-studio-two">Studio</span></a
+          >
+
           <address class="address">
             <ul class="address-link style">
               <li class="address-item">
@@ -246,6 +250,39 @@
               </li>
             </ul>
           </address>
+        </div>
+        <div class="footer-address">
+          <span class="footer-text">приєднуйтесь</span>
+          <ul class="footer-items">
+            <li class="footer-icon">
+              <a href="#">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

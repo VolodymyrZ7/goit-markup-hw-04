@@ -7,6 +7,7 @@
   --brand-text-color: #757575;
   --accent: #2196f3;
   --backgroudn-color: #ffffff;
+  --main-icon-color: #afb1b8;
 }
 
 .body {
@@ -94,9 +95,6 @@ ul {
 .site-nav {
   display: flex;
   gap: 50px;
-  /* margin-top: 32px; */
-  /* margin-right: 344px; */
-  /* margin-bottom: 32px; */
 }
 
 .auth-nav .contact {
@@ -116,17 +114,41 @@ ul {
 
 .auth-nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
   margin-left: auto;
-  /* margin-top: 32px;
-  margin-bottom: 32px; */
+}
+
+.auth-icon {
+  display: flex;
+  align-items: center;
+}
+
+.auth-icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* -----------------герой------------------- */
 .hero {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team.jpg);
 }
 
 .hero-title {
@@ -232,6 +254,22 @@ ul {
   margin-bottom: 10px;
 }
 
+.offer-svg {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.offer-svg-icon {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 /* ---------------приміри робіт------------  */
 
 .section-work-item {
@@ -261,16 +299,6 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* 
-.section-item .title {
-  text-align: center;
-  margin-top: 30px;
-}
-.section-item .text {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-} */
 
 .title-text {
   padding-top: 30px;
@@ -285,6 +313,36 @@ ul {
 .team-padding {
   background-color: #f5f4fa;
   padding-top: 94px;
+}
+
+.team-icon {
+  display: flex;
+  gap: 10px;
+  padding-top: 16px;
+  justify-content: center;
+}
+
+.team-icon-svg {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* background-color: #2196f3; */
+}
+
+.t-i-svg {
+  fill: var(--main-icon-color);
+}
+
+.team-icon-svg:hover,
+.team-icon-svg:focus {
+  background-color: #2196f3;
+}
+
+.team-icon-svg:hover .t-i-svg {
+  fill: #ffffff;
 }
 
 /* ---------------фільрт кнопок------------  */
@@ -356,6 +414,40 @@ ul {
   border-left: 1px solid #eeeeee;
 }
 
+.portfolio-hover:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* ------------ ПОСТІЙНІ КЛІЄНТИ ------------ */
+.clients-item {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.clients-icon {
+  display: flex;
+  gap: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-color {
+  fill: var(--main-icon-color);
+}
+
+.clients-icon .clients-color:hover,
+.clients-icon .clients-color:focus {
+  border-color: var(--accent);
+  fill: var(--accent);
+}
+
 /* ----------------підвал------------------ */
 
 .container-logo {
@@ -398,4 +490,49 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* --------------ПРИЄДНУЙТЕСЬ-------------- */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-address {
+  margin-left: 70px;
+}
+
+.footer-items {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.footer-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.color-svg {
+  fill: #ffffff;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--accent);
 }
