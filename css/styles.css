@@ -442,12 +442,14 @@ ul {
   fill: var(--main-icon-color);
 }
 
-.clients-icon .clients-color:hover,
-.clients-icon .clients-color:focus {
+.clients-icon:hover,
+.clients-icon:focus {
   border-color: var(--accent);
-  fill: var(--accent);
 }
 
+.clients-icon:hover .clients-color {
+  fill: var(--accent);
+}
 /* ----------------підвал------------------ */
 
 .container-logo {
