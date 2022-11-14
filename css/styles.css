@@ -202,10 +202,6 @@ ul {
   padding-bottom: 94px;
 }
 
-/* .our-team {
-  background-color: #f5f4fa;
-} */
-
 .section .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -315,11 +311,17 @@ ul {
   padding-top: 94px;
 }
 
-.team-icon {
+.team-item {
   display: flex;
   gap: 10px;
   padding-top: 16px;
   justify-content: center;
+}
+
+.team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-icon-svg {
@@ -329,19 +331,12 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* background-color: #2196f3; */
-}
-
-.t-i-svg {
   fill: var(--main-icon-color);
 }
 
 .team-icon-svg:hover,
 .team-icon-svg:focus {
-  background-color: #2196f3;
-}
-
-.team-icon-svg:hover .t-i-svg {
+  background-color: var(--accent);
   fill: #ffffff;
 }
 
@@ -429,26 +424,25 @@ ul {
 
 .clients-icon {
   display: flex;
+}
+
+.clients-icon-svg {
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--main-icon-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-}
-
-.clients-color {
   fill: var(--main-icon-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-icon-svg:hover,
+.clients-icon-svg:focus {
   border-color: var(--accent);
-}
-
-.clients-icon:hover .clients-color {
   fill: var(--accent);
 }
+
 /* ----------------підвал------------------ */
 
 .container-logo {
@@ -497,6 +491,7 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
+  align-items: center;
 }
 
 .footer-text {
@@ -521,19 +516,22 @@ ul {
 
 .footer-icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-svg {
+  display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.color-svg {
-  fill: #ffffff;
-}
-
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-icon-svg:hover,
+.footer-icon-svg:focus {
   background-color: var(--accent);
 }
