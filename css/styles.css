@@ -208,6 +208,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .section .title {
@@ -247,7 +248,16 @@ ul {
 }
 
 .title-offer {
+  font-size: 14px;
+  line-height: 1.14;
   margin-bottom: 10px;
+}
+
+.text-offer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--brand-text-color);
 }
 
 .offer-svg {
@@ -290,13 +300,13 @@ ul {
 }
 
 .section-item {
-  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .title-text {
+  background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -314,7 +324,7 @@ ul {
 .team-item {
   display: flex;
   gap: 10px;
-  padding-top: 16px;
+  margin-top: 16px;
   justify-content: center;
 }
 
@@ -409,6 +419,10 @@ ul {
   border-left: 1px solid #eeeeee;
 }
 
+.portfolio-hover {
+  display: block;
+}
+
 .portfolio-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -418,7 +432,6 @@ ul {
 .clients-item {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
   justify-content: center;
 }
 
@@ -491,7 +504,6 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
-  align-items: center;
 }
 
 .footer-text {
@@ -500,7 +512,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -511,7 +523,6 @@ ul {
 .footer-items {
   display: flex;
   gap: 10px;
-  padding-top: 20px;
 }
 
 .footer-icon {
